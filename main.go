@@ -35,7 +35,7 @@ func (t Training) meanSpeed() float64 {
 	if t.Duration == 0 {
 		return 0
 	}
-	return distance(t) / t.Duration.Hours()
+	return t.distance() / t.Duration.Hours()
 }
 
 // Calories возвращает количество потраченных килокалорий на тренировке.
